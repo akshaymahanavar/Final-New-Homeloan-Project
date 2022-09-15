@@ -1,0 +1,72 @@
+<title>ENQUIRY FORM</title>
+     
+        <div class="main">
+       
+            <div class="registerimage">
+            <img src="assets\sales\Hand.jpg" width="1980px" height="1080px" class="download">
+            <div class="register">
+        <div class="field" style="font-size: 29px;">           
+             <h2 class="title" style="color: yellow;">ENQUIRY FORM </h2>
+
+            <form [formGroup]="enquiryform"  (ngSubmit)="onSubmit()"   id="name">
+              FullName: <input type="text" formControlName="fullname" placeholder="Enter Your FullName" class="place">
+              <div *ngIf="enquiryform.controls['fullname'].touched && 
+              enquiryform.controls['fullname'].invalid">
+               <span *ngIf="enquiryform.controls['fullname'].hasError('required')" style="color: 
+            white">FirstName is Required</span>
+              <span *ngIf="enquiryform.controls['fullname'].hasError('minlength')" style="color: 
+            white">minimum 5 characters required</span>
+               <span *ngIf="enquiryform.controls['fullname'].hasError('maxlength')" style="color: 
+              white">maximum 10 characters required</span> 
+                </div>
+                <br>
+                <i class="fa-solid fa-mobile-retro"></i>MobileNo: <input type="number" formControlName="mobileno" placeholder="10 Digit MobileNo " class="place">
+              <div *ngIf="enquiryform.controls['mobileno'].touched && 
+              enquiryform.controls['mobileno'].invalid">
+               <span *ngIf="enquiryform.controls['mobileno'].hasError('required')" style="color: 
+              white">MobileNo is Required</span>
+               <span *ngIf="enquiryform.controls['mobileno'].hasError('maxlength')" style="color: 
+              white">maximum 10 characters required</span> 
+               <span *ngIf="enquiryform.controls['mobileno'].hasError('minlength')" style="color: 
+               white">minimum 10 characters required</span>
+              </div>
+              <br>
+              <i class="fa-sharp fa-solid fa-envelope-circle-check"></i>email: <input type="text" formControlName="email" placeholder="Email Should be @ form" class="place">
+              <div *ngIf="enquiryform.controls['email'].touched && 
+              enquiryform.controls['mobileno'].invalid">
+               <span *ngIf="enquiryform.controls['email'].hasError('required')" style="color: 
+            white">email is Required</span>
+               <span *ngIf="enquiryform.controls['email'].hasError('maxlength')" style="color: 
+              white">maximum 20 characters required</span> 
+              </div>
+              <br>
+              <i class="fa-regular fa-calendar-days"></i>Age: <input type="number" formControlName="age" placeholder="Age should be above 21" class="place">
+              <div *ngIf="enquiryform.controls['age'].touched && 
+              enquiryform.controls['age'].invalid">
+               <span *ngIf="enquiryform.controls['age'].hasError('required')" style="color: 
+              white">Age should be above 21</span>
+               <span *ngIf="enquiryform.controls['age'].hasError('minlength')" style="color: 
+              white">Age should be above 21</span> 
+              </div><br><br>
+              <label ><i class="fa-solid fa-person-half-dress"></i> Gender: </label>
+          <br>
+            <input  type="radio" name="gender" id="male" formControlName="gender" value="m">
+            <span id="male">Male</span>
+            &nbsp;
+            <input type="radio" name="gender" id="Female" formControlName="gender" value="f">
+            <span id="female">Female</span>
+           &nbsp;
+            <input type="radio" name="gender" id="other" formControlName="gender" value="o">
+            <span id="other">Other</span>
+          <br><br>
+          
+           <button  class="btn btn-primary" type="submit" value="Submit">&nbsp; SUBMIT &nbsp;</button>
+
+           </form>
+          &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp;
+        <!-- <button class="btn btn-warning"  (click)="clickhere()">Check Cibil</button> -->
+    </div> 
+        </div>
+    
+    
+<router-outlet></router-outlet>

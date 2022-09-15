@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loginpage">
+        <div class="formbox">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button class="toggle-btn" >Login</button>
+                        </div>
+            <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <form id="login" class="group" [formGroup]="loginForm" (ngSubmit)="navigateTologin()">
+                <h5>UserName:</h5><input type="text" class="input-field" formControlName="userName" placeholder="Enter UserName" required>
+                <h5>Password:</h5><input type="text" class="input-field" formControlName="password" placeholder="Enter Password" required><br><br>
+                <input type="checkbox" class="checkbox" required>&nbsp;<span>Remember Password</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                <button type="submit" class="submit-btn" [disabled]="!loginForm.valid">Login</button>
+              <h5 style="color: red">{{msg}}</h5>
+            </form>
+             
+        </div>
+    </div>
+</body>
+</html>
