@@ -1,0 +1,63 @@
+.paragraph h1{
+    color:#fff;
+    font-size: 110px;
+    font-weight:Bold;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+*{
+margin: 0;
+padding: 0;
+}
+.slide1, .slide2, .slide3, .slide4{
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 170px;
+    margin-left: 1395px;
+    margin-top: 312px;
+}
+.slide1{
+    animation: fade1 25s infinite;
+}
+.slide2{
+    animation: fade2 25s infinite;
+}
+.slide3{
+    animation: fade3 25s infinite;
+}
+.slide4{
+    animation: fade4 25s infinite;
+}
+@keyframes fade1{
+    0%{opacity: 1;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes fade2{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade3{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 1;}
+    75%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade4{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.he{
+    background: linear-gradient(to right, #cbff10,#06f7ff);
+     
+    }

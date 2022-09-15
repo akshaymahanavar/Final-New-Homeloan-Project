@@ -1,0 +1,30 @@
+<body>
+    
+        
+    <table class="container">
+    <p class="heading">EMI Calculator</p>
+    <div class="input">
+        <label class="words" for="amount">Loan Amount(₹)</label>
+        <input type="number"  [(ngModel)]="P">            
+    </div>
+    <div class="input">
+        <label class="words" for="interest">Interest Rate(%)</label>
+        <input type="number" disabled="disabled"  [(ngModel)]="R">            
+    </div>
+    <div class="input" > 
+        <label class="words" for="loanTenure">Loan Tenure(Month)</label>
+        <input type="number"   [(ngModel)]="N">            
+    </div>
+    <div class="calculator">
+        <input type="submit" value="Calculate" id="calculate" (click)="calculate()">            
+    </div>
+    
+    <div class="output">
+        <p class="words" >Loan EMI<span id="emi">{{result}} ₹</span></p>
+        <p class="words">Total Interest Payable<span id="totalInterest">{{totalintrest}}₹</span></p>
+        <p class="words">Total Payment(Principal + Interest)<span id="totalPayment">{{totalpayment}}₹</span> </p>
+        
+    </div>
+</table>
+
+</body>

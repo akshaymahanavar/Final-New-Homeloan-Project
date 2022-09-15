@@ -1,0 +1,102 @@
+<body background="white">
+   
+  <mat-toolbar color="silver" class="manubar">
+    <mat-toolbar-row >
+          <button mat-icon-button class="but">
+              <mat-icon (click)="sidenav.toggle();" class="buts">menu</mat-icon>
+              </button>
+      <h1 class="ss">SalesExecutive</h1>
+      
+      </mat-toolbar-row> 
+      <div class="profile"><img src="assets\team\nitin.jpg" alt="profile">
+      </div>  
+      <h5 class="nitin">Nitin Lande</h5>
+      <h6 class="prof">profession:<br>Sales Executive</h6>
+      <button class="btn" routerLink="/login">Logout</button>
+    </mat-toolbar>
+    
+      <mat-sidenav-container>
+          <mat-sidenav #sidenav class="side">
+              <mat-nav-list class="sidenavbar">
+                  <a routerLink="enquiry" class="hov"><i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Enquiry Form</span><a mat-list-item></a></a>
+                  <a routerLink="emi"><i class="fas fa-chart-area fa-fw me-3" ></i><span>EMI Calculator</span><a mat-list-item></a></a>
+                  <a routerLink="approvedlist"><i class="fas fa-lock fa-fw me-3" ></i><span>Approved List</span><a mat-list-item></a></a>
+                 <a routerLink="rejectlist"><i class="fas fa-chart-line fa-fw me-3" routerLink="rejection"></i><span>Rejection List</span><a mat-list-item></a></a>
+                  <a mat-list-item></a>
+              </mat-nav-list>
+          </mat-sidenav>
+          <mat-sidenav-content>
+              <div style="height: 88vh;">
+                  <router-outlet></router-outlet>
+                  </div>
+          </mat-sidenav-content>
+          </mat-sidenav-container>
+      
+        </body>   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- <header> -->
+      <!-- <div class="sidebar1">
+          <h1 style="color: darkorange;">SideBar</h1>
+      </div>
+          <nav
+               id="sidebarMenu"
+               class="collapse d-lg-block sidebar collapse bg-white"
+               >
+            <div class="position-sticky">
+              <div class="list-group list-group-flush mx-3 mt-4">
+                <a
+                   href="#"
+                   class="list-group-item list-group-item-action py-2 ripple"
+                   aria-current="true"
+                   >
+                  <i class="fas fa-tachometer-alt fa-fw me-3"></i
+                    ><span>Enquiry Form</span>
+                </a>
+                <a
+                   href="#"
+                   class="list-group-item list-group-item-action py-2 ripple active"
+                   >
+                  <i class="fas fa-chart-area fa-fw me-3"></i
+                    ><span>EMI Calculator</span>
+                </a>
+                <a
+                   href="#"
+                   class="list-group-item list-group-item-action py-2 ripple"
+                   ><i class="fas fa-lock fa-fw me-3"></i><span>Approved List</span></a
+                  >
+                <a
+                   href="#"
+                   class="list-group-item list-group-item-action py-2 ripple"
+                   ><i class="fas fa-chart-line fa-fw me-3"></i
+                  ><span>Rejection List</span></a
+                  >
+                
+                <a
+                   href="#"
+                   class="list-group-item list-group-item-action py-2 ripple"
+                   ><i class="fas fa-users fa-fw me-3"></i><span>Users</span></a
+                  >
+                <a
+                   href="#"
+                   class="list-group-item list-group-item-action py-2 ripple"
+                   ><i class="fas fa-money-bill fa-fw me-3"></i><span>Sales</span></a>
+              </div>
+            </div>
+          </nav>
+        </header> -->
+        
+      
+  
+  
+  
+  
+  
