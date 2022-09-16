@@ -11,7 +11,6 @@ import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
-import { ApprovedlistComponent } from '../approvedlist/approvedlist.component';
 import { EnquiryFormComponent } from '../enquiry-form/enquiry-form.component';
 import { RejectlistComponent } from '../rejectlist/rejectlist.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -25,7 +24,6 @@ console.log("loanofficer module works");
     LoanOfficerComponent,
     EmicalculatorComponent, 
     EnquiryFormComponent,
-    ApprovedlistComponent,
     RejectlistComponent
   ],
   imports: [

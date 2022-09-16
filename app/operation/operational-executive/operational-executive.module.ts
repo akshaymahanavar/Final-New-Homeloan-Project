@@ -10,13 +10,17 @@ import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
+import { HttpClientModule } from '@angular/common/http';
+import { ChecklistComponent } from '../checklist/checklist.component';
 
 
 console.log("operation module works");
 
 @NgModule({
   declarations: [
-    OperationalExecutiveComponent
+    OperationalExecutiveComponent,
+    ChecklistComponent
+  
   ],
   imports: [
     CommonModule,
@@ -28,7 +32,8 @@ console.log("operation module works");
      MatListModule,
      MatButtonModule,
      MatMenuModule,
-     MatDividerModule
+     MatDividerModule,
+     HttpClientModule
   ]
 })
 export class OperationalExecutiveModule { }

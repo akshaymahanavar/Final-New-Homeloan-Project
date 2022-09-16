@@ -1,7 +1,7 @@
 <div class="container">
-    <table class="table table-striped"  border="3" >
-      <tbody class="table-success">       
- <th>Form No</th>
+  <table class="table table-striped"  border="3" >
+    <tbody class="table-success">       
+<th>Form No</th>
 <th>Full Name</th>
 <th>Mobile No</th>
 <th>Email Id</th>
@@ -10,20 +10,23 @@
 <th>Cibil Score</th>
 <th>Status</th>
 
-<!-- <tr *ngFor="let e of emplist"> -->
-  <!-- <td class="table-success">{{e.id}}</td>
-  <td class="table-secondary">{{e.name}}</td>
-  <td class="table-primary">{{e.address}}</td>
-  <td class="table-danger">{{e.city}}</td>
-  <td class="table-success">{{e.email}}</td>
-  <td class="table-warning">{{e.mobile}}</td>
-  <td class="table-primary">{{e.designation}}</td>
-  <td class="table-danger">{{e.username}}</td>
-  <td class="table-success">{{e.password}}</td> -->
-  </tbody>
-  </table>
-  </div>
- 
+<tr *ngFor="let e of enquiry">
+ <td class="table-success">{{e.formno}}</td>
+<td class="table-secondary">{{e.fullname}}</td>
+<td class="table-primary">{{e.mobileno}}</td>
+<td class="table-primary">{{e.email}}</td>
+<td class="table-success">{{e.gender}}</td> 
+<td class="table-primary">{{e.age}}</td>
+<td><button style="color:black" class="btn"  class="btn btn-warning" [routerLink]="['/addproduct']"[state]="e" >Cibil Score</button></td>
+<td><button style="color:black" class="btn"  class="btn btn-success" [routerLink]="['/addproduct']"[state]="e" >Approved</button></td>
+<td><button style="color:black" class="btn"  class="btn btn-danger" [routerLink]="['/addproduct']"[state]="e">Reject</button></td>
+
+<!-- <td> <button style="color:black" class="btn"  class="btn btn-danger" (click)="deleteData(e.productId)">delete</button></td> -->
+
+</tbody>
+</table>
+</div>
+<router-outlet></router-outlet>
 
 
 

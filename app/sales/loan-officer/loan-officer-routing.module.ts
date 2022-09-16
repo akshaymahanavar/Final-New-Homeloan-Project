@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ApprovedlistComponent } from '../approvedlist/approvedlist.component';
 import { EmicalculatorComponent } from '../emicalculator/emicalculator.component';
 import { EnquiryFormComponent } from '../enquiry-form/enquiry-form.component';
 import { RejectlistComponent } from '../rejectlist/rejectlist.component';
@@ -16,9 +15,7 @@ const routes: Routes = [
       {
         path:'emi',component:EmicalculatorComponent
       },
-      {
-        path:'approvedlist',component:ApprovedlistComponent
-      },
+      
       {
         path:'rejectlist',component:RejectlistComponent
       }

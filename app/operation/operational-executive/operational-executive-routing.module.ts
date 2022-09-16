@@ -8,7 +8,7 @@ const routes: Routes = [
   path:'',component:OperationalExecutiveComponent,
   children:[
     {
-      path:'checklist',component:ChecklistComponent
+path:'enquirylist',component:ChecklistComponent
     }
   ]
   }
