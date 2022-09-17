@@ -12,17 +12,32 @@ import { CommonService } from 'src/app/common/common.service';
 })
 export class CibilscoreComponent implements OnInit {
 [x: string]: any;
-enqobj: any;
-  constructor(private location:Location,private cs:CibilService) { }
-  
+
+  constructor(private location:Location,private cs:CibilService,private fb:FormBuilder) { }
+  enqobj:any
+  cibilform:FormGroup
   ngOnInit(): void {
     
-   let enqobj=this.location.getState();
-  }
+   let enqobjs=this.location.getState();
+this.enqobj=enqobjs;
+
+this.cibilform=this.fb.group({
+  cibilid:[''],
+  cibilscore:[''],
+  cibilstatus:['']
+})
+
+}
   
-  cibil:any
+  cibilscore:any
+
   getcibil(){
     this.cs.getcibil().subscribe(data=>{
-      this.cibil=data})
+      this.cibilscore=data})
+  }
+
+  savecibil(){
+  
+    this.cs.postcibil(this.cibilform.value,this.enqobj.formno).subscribe();
   }
 }

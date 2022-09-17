@@ -7,11 +7,18 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class CibilService {
   getcibilscore:string = "http://localhost:7777/cibil/cibilscore/";
+
+  postcibilscore:string="http://localhost:7777/cibil/sendchecklist/";
   constructor(private http:HttpClient) { }
 
   getcibil():Observable<number> 
   {
     return this.http.get<number>(this.getcibilscore);
+  }
+
+  postcibil(cibil:any,formno:number)
+  {
+    return this.http.post(this.postcibilscore+formno,cibil);
   }
 
 }
