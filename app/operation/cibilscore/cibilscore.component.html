@@ -1,5 +1,3 @@
-
-
     <div class="jumbotron"style="text-align:center" >
       <table class="table table-dark center " style="text-align:center" >
         <div> 
@@ -40,7 +38,7 @@
           <div class="cibi">
             <form [formGroup]="cibilform" (ngSubmit)="savecibil()">
               <tr>
-                <td> <input type="text" class="textbox" formControlName="cibilscore" hidden="hidden"></td>
+                <td> <input type="number" class="textbox" formControlName="cibilscore" value="{{cibilscore}}"  name="cibilscore"  hidden></td>
               </tr>
                 <tr>
                 <td class="text"> Status</td>
@@ -74,5 +72,4 @@
       <!-- <button class="btn" routerLink="/employee/emp-list">Go Back</button> -->
    
       </table>
-      
-    </div>
+      </div>

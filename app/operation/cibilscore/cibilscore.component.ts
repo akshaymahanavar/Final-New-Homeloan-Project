@@ -23,7 +23,7 @@ this.enqobj=enqobjs;
 
 this.cibilform=this.fb.group({
   cibilid:[''],
-  cibilscore:[''],
+  cibilscore:[],
   cibilstatus:['']
 })
 
@@ -33,10 +33,13 @@ this.cibilform=this.fb.group({
 
   getcibil(){
     this.cs.getcibil().subscribe(data=>{
-      this.cibilscore=data})
+      this.cibilscore=data,
+      this.cibilform.get('cibilscore').setValue(data)
+    })
   }
 
   savecibil(){
+  console.log(this.cibilform.get('cibilscore').value);
   
     this.cs.postcibil(this.cibilform.value,this.enqobj.formno).subscribe();
   }
