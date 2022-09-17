@@ -22,4 +22,11 @@ public class Cibil
     private String cibilstatus;
     @OneToOne(cascade = CascadeType.ALL )
     private EnquiryForm enquiryform;
+    
+    
+ 
 }
+
+
+
+
