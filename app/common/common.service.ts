@@ -9,16 +9,21 @@ import { EnquiryForm } from '../model/enquiry-form';
 export class CommonService {
 
   constructor(private http:HttpClient) { }
-  url:string="http://localhost:7777/api/sendenquiryform"
-  url1:string = "http://localhost:7777/api/getenquiryforms";
+  postenq:string="http://localhost:7777/api/sendenquiryform/"
+  getenq:string = "http://localhost:7777/api/getenquiryforms/";
+  
+  url3:string="";
   postdata(enq:EnquiryForm)
   {
     console.log(enq.fullname+""+enq.email)
-   return this.http.post(this.url,enq);
+   return this.http.post(this.postenq,enq);
   }
 
   getdata():Observable<EnquiryForm[]> 
   {
-    return this.http.get<EnquiryForm[]>(this.url1);
+    return this.http.get<EnquiryForm[]>(this.getenq);
   }
+
+  
+  
 }

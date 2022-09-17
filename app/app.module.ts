@@ -10,12 +10,15 @@ import { LoanOfficerModule } from './sales/loan-officer/loan-officer.module';
 import { OperationalExecutiveModule } from './operation/operational-executive/operational-executive.module';
 import { CommonService } from './common/common.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ApprovedlistComponent } from './inspection/approvedlist/approvedlist.component';
+import { CibilscoreComponent } from './operation/cibilscore/cibilscore.component';
 
 console.log("app module works");
 
 @NgModule({
   declarations: [
     AppComponent
+  
   ],
   imports: [
     AppRoutingModule,

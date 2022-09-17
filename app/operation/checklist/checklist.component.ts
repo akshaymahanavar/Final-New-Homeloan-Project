@@ -8,12 +8,11 @@ import { EnquiryForm } from 'src/app/model/enquiry-form';
   styleUrls: ['./checklist.component.css']
 })
 export class ChecklistComponent implements OnInit {
-
+  
   constructor(private cs:CommonService){}
   enquiry:EnquiryForm[];
   ngOnInit(): void 
   {
     this.cs.getdata().subscribe(data =>{this.enquiry=data});
   }   
-
-}
+ }

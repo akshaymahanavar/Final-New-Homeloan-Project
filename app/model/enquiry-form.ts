@@ -1,3 +1,5 @@
+
+
 export class EnquiryForm {
     formno:number
     fullname:string

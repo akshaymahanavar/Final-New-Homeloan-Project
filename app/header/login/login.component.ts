@@ -26,12 +26,22 @@ export class LoginComponent implements OnInit {
   else{
   if(this.loginForm.get(['userName']).value==="oper" && this.loginForm.get(['password']).value==="oper"){
 //    this.router.navigate(['login/operation']);
-this.router.navigateByUrl("login/operation");
-}
+   this.router.navigateByUrl("login/operation");
+  }
+   else{
+    if
+    (this.loginForm.get(['userName']).value==="ins" && this.loginForm.get(['password']).value==="ins"){
+      //    this.router.navigate(['login/inspection']);
+         this.router.navigateByUrl("login/inspection");
+
+   }
+
   else{
     this.msg="wrong userid!!!!";
     this.router.navigate(['login']);
+    
   }
+}
 }
 }
 }

@@ -27,6 +27,9 @@ export const headerroutes: Routes = [
   },
   {
     path:'login/operation',loadChildren:()=>import('src/app/operation/operational-executive/operational-executive.module').then(module=>module.OperationalExecutiveModule)
+  },
+  {
+    path:'login/inspection',loadChildren:()=>import('src/app/inspection/inspector/inspector.module').then(module=>module.InspectorModule)
   }
 ];
 

@@ -12,6 +12,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import { HttpClientModule } from '@angular/common/http';
 import { ChecklistComponent } from '../checklist/checklist.component';
+import { CibilscoreComponent } from '../cibilscore/cibilscore.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 console.log("operation module works");
@@ -19,8 +21,8 @@ console.log("operation module works");
 @NgModule({
   declarations: [
     OperationalExecutiveComponent,
-    ChecklistComponent
-  
+    ChecklistComponent,
+    CibilscoreComponent
   ],
   imports: [
     CommonModule,
@@ -33,7 +35,9 @@ console.log("operation module works");
      MatButtonModule,
      MatMenuModule,
      MatDividerModule,
-     HttpClientModule
+     HttpClientModule,
+     ReactiveFormsModule,
+     FormsModule
   ]
 })
 export class OperationalExecutiveModule { }

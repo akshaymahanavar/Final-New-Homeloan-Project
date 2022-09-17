@@ -1,0 +1,70 @@
+formno:number
+    fullname:string
+    mobileno:number
+    email:string
+    age:number
+    gender:string
+
+
+
+    <div class="jumbotron"style="text-align:center" >
+      <table class="table table-dark center " style="text-align:center" >
+         <tr class="heading">
+         <th class="head" colspan="2">Enquiry Details </th> 
+      </tr>
+          <tr>
+              <td class="text"> FormNo</td>
+              <td> <input type="text" value={{enqobj.formno}} disabled class="textbox"></td>
+          </tr>
+          <tr>
+              <td class="text"> FullName</td>
+              <td> <input type="text" value={{enqobj.fullname}} disabled class="textbox"></td>
+          </tr>
+          <tr>
+              <td class="text"> MobileNo</td>
+              <td> <input type="text" value={{enqobj.mobileno}} disabled class="textbox"></td>
+          </tr>
+          <tr>
+              <td class="text">Email</td>
+              <td> <input type="text" value={{enqobj.email}} disabled class="textbox"></td>
+          </tr>
+          <tr>
+              <td class="text"> Age</td>
+              <td> <input type="text" value={{enqobj.age}} disabled class="textbox"></td>
+          </tr>
+          <tr>
+              <td class="text"> Gender</td>
+              <td> <input type="text" value={{enqobj.gender}} disabled class="textbox"></td>
+          </tr>
+          <tr>
+            <td><button (click)="getcibil()">Find Cibil</button></td>
+            <td> <input type="text" value={{cibil}} disabled class="textbox"></td>
+        </tr>
+        <tr>
+          <td class="text"> CibilStatus</td>
+          <td> <input  type="radio" name="cibilstatus" id="approved" formControlName="cibilstatus" value="approved">
+            <span id="approved">Approved</span> &nbsp;&nbsp;
+            <input  type="radio" name="cibilstatus" id="reject" formControlName="cibilstatus" value="reject">
+            <span id="reject">Reject</span>
+          </td>
+      </tr>
+          <!-- <tr>
+              <td class="text"> CityName</td>
+              <td> <input type="text" value={{employeeObj.addr.cityName}} disabled class="textbox"></td>
+          </tr>
+          <tr>
+              <td class="text"> AreaName</td>
+              <td> <input type="text" value={{employeeObj.addr.areaName}} disabled class="textbox"></td>
+          </tr>
+          <tr>
+              <td class="text"> Pincode</td>
+              <td> <input type="text" value={{employeeObj.addr.vil.pincode}} disabled class="textbox"></td>
+          </tr>
+  
+  
+      </table> 
+      <button class="btn" (click)="getback()">Go Back</button> -->
+      <!-- <button class="btn" routerLink="/employee/emp-list">Go Back</button> -->
+   
+      </table>
+      </div>
