@@ -1,0 +1,35 @@
+<p>adddocument works!</p>
+<div>
+    <form [formGroup]="formDoc" (ngSubmit)="saveDoc()">
+        applicantName &nbsp;&nbsp;<input type="string" formControlName="applicantName"><br><br>
+        docid &nbsp;&nbsp;<input type="number" formControlName="docid"><br><br>
+        adharcard &nbsp;&nbsp;<input type="file" (change)="onselectadharcard($event)"><br><br>
+        pancard &nbsp;&nbsp;<input type="file"(change)="onselectpancard($event)"><br><br>
+        photo &nbsp;&nbsp;<input type="file"(change)="onselectphoto($event)"><br><br>   
+        sign &nbsp;&nbsp;<input type="file"(change)="onselectsign($event)"><br><br>
+        <button type="submit">Add Document</button><br><br>
+    </form>
+</div>
+<div>
+    <button (click)="getDocument()">getDocument</button>
+</div>
+<table border="2">
+    <thead>
+        <th>ApplicantName</th>
+        <th>docid</th>
+        <th>adharCard</th>
+        <th>pancard</th>
+        <th>sign</th>
+        <th>photo</th>
+    </thead>
+    <tbody *ngIf=retriveDoc>
+        <tr *ngFor="let d of retriveDoc">
+            <td>{{d.applicantName}}</td>
+            <td>{{d.docid}}</td>
+            <td><img [src]="'data:image/jpeg;base64,'+d.photo" height="150"></td> 
+            <td><img [src]="'data:image/jpeg;base64,'+d.sign" height="150"></td>
+            <td><img [src]="'data:image/jpeg;base64,'+d.adharcard" height="150"></td>
+            <td><img [src]="'data:image/jpeg;base64,'+d.pancard" height="150"></td>
+        </tr>
+    </tbody>
+</table>
