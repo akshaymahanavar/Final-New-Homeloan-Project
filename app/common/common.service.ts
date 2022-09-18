@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { CustomerDetail } from '../model/customer-detail';
 import { EnquiryForm } from '../model/enquiry-form';
 
 @Injectable({
@@ -23,6 +24,7 @@ export class CommonService {
   {
     return this.http.get<EnquiryForm[]>(this.getenq);
   }
+
 
   
   

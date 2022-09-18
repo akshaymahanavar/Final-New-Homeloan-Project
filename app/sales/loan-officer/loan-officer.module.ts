@@ -19,6 +19,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ApprovedlistComponent } from '../approvedlist/approvedlist.component';
 import { EmailrejectComponent } from '../emailreject/emailreject.component';
 import { CustomerDetailsComponent } from '../customer-details/customer-details.component';
+import { BankDetailsComponent } from '../bank-details/bank-details.component';
+import { AddressComponent } from '../address/address.component';
 
 console.log("loanofficer module works");
 
@@ -30,7 +32,9 @@ console.log("loanofficer module works");
     RejectlistComponent,
     ApprovedlistComponent,
     EmailrejectComponent,
-    CustomerDetailsComponent
+    CustomerDetailsComponent,
+    BankDetailsComponent,
+    AddressComponent
   ],
   imports: [
     CommonModule,

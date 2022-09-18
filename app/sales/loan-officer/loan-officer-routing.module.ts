@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddressComponent } from '../address/address.component';
 import { ApprovedlistComponent } from '../approvedlist/approvedlist.component';
+import { BankDetailsComponent } from '../bank-details/bank-details.component';
 import { CustomerDetailsComponent } from '../customer-details/customer-details.component';
 import { EmailrejectComponent } from '../emailreject/emailreject.component';
 import { EmicalculatorComponent } from '../emicalculator/emicalculator.component';
@@ -32,6 +34,12 @@ const routes: Routes = [
       },
       {
         path:'customerdetails',component:CustomerDetailsComponent
+      },
+      {
+        path:'bankdetail',component:BankDetailsComponent
+      },
+      {
+        path:'addressdetail',component:AddressComponent
       }
     ]
   }

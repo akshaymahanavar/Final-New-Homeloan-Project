@@ -13,12 +13,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { CibilscoreComponent } from './operation/cibilscore/cibilscore.component';
 import { EmailrejectComponent } from './sales/emailreject/emailreject.component';
 import { CustomerDetailsComponent } from './sales/customer-details/customer-details.component';
+import { BankDetailsComponent } from './sales/bank-details/bank-details.component';
+import { AddressComponent } from './sales/address/address.component';
 
 console.log("app module works");
 
 @NgModule({
   declarations: [
     AppComponent
+
   
   ],
   imports: [

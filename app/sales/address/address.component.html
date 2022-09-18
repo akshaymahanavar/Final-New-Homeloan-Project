@@ -1,0 +1,28 @@
+
+<marquee><h1 class="bankdetail"><i>Address Details Form</i></h1></marquee>
+<br>
+ <!-- <form class="custform" [formGroup]="customerform> -->
+    <form [formGroup]="addressform" (ngSubmit)="saveaddress()">
+   <div class="mb-4">
+     <label  class="form-label" >Panno</label>
+     <input required="required" type="text" class="form-control" id="exampleInputNumber" formControlName="panno" placeholder="Enter panno">
+      </div>   
+   <div class="mb-5">
+    <label  class="form-label">AdharNo</label>
+    <input required="required" type="text" class="form-control" id="exampleInputNumber" formControlName="adharno" placeholder="Enter adharno">   
+</div>
+<div class="mb-5">
+    <label  class="form-label">Cityname</label>
+    <input required="required" type="text" class="form-control" id="exampleInputNumber" formControlName="cityname" placeholder="Enter cityname">   
+</div>
+<div class="mb-5">
+    <label  class="form-label">AreaName</label>
+    <input required="required" type="text" class="form-control" id="exampleInputNumber" formControlName="areaname" placeholder="Enter areaname">   
+</div>
+
+<div class="mb-5">
+    <label  class="form-label">pinno</label>
+    <input required="required" type="text" class="form-control" id="exampleInputNumber" formControlName="pinno" placeholder="Enter pinno">   
+</div>
+ <button type="submit" class="btn btn-danger" >NextPage<i class="fa-solid fa-forward"></i></button>
+</form> 

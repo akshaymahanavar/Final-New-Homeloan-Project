@@ -1,1 +1,32 @@
-<p>customer-details works!</p>
+
+<marquee><h1 class="bankdetail"><i>Customer Details</i></h1></marquee>
+<br>
+<form class="custform" [formGroup]="customerform" (ngSubmit)="savecustomer()">
+    <div class="mb-4">
+     <label  class="form-label" >FullName</label>
+     <input type="text" class="form-control" id="exampleInputNumber" formControlName="fullname" placeholder="Enter FullName">
+      </div>   
+   <div class="mb-5">
+    <label  class="form-label">MobileNo</label>
+    <input type="text" class="form-control" id="exampleInputNumber" formControlName="mobileno" placeholder="Enter MobileNo">   
+</div>
+<div class="mb-5">
+    <label  class="form-label">Age</label>
+    <input type="text" class="form-control" id="exampleInputNumber" formControlName="age" placeholder="Enter Age">   
+</div>
+<div class="mb-5">
+    <label  class="form-label">DOB</label>
+    <input type="text" class="form-control" id="exampleInputNumber" formControlName="dob" placeholder="Enter DOB">   
+</div>
+<div class="mb-5">
+    <label  class="form-label">Gender</label>
+    <span id="male" class="male">Male</span> &nbsp;&nbsp;
+    <input  type="radio" name="male" id="male" formControlName="gender" value="m">
+    <span id="female" class="male">Female</span> &nbsp;&nbsp;
+    <input  type="radio" name="female" id="female" formControlName="gender" value="f">
+    <span id="other" class="male">Other</span> &nbsp;&nbsp;
+    <input  type="radio" name="other" id="other" formControlName="gender" value="o">
+</div>
+
+ <button type="submit" class="btn btn-primary">NextPage<i class="fa-solid fa-forward"></i></button>
+</form>
