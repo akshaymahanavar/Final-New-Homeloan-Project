@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url("src\assets\Home.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+}
+.navlist{
+    width: 80%;
+    display: flex;
+    align-items: center;     /* vertically center */
+    height: 10px;
+}
+.navlist li{
+    list-style: none;
+    padding: 0px;   /* height */
+    margin: 15px;
+    
+}
+.navlist li a{
+    padding: 40px;
+    margin: 2px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.rightnav{
+    width: 20%;
+text-align: end;
+padding: 15px;
+}
+.logo{
+width: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo img{
+    padding: 0;
+    margin-right: 5px;
+width:50%;
+border: solid seashell;
+border-radius: 10px;
+}
+.navlist li a:hover{
+    color: black;
+}
+#search{
+padding: 7px;
+border: black;
+border-radius: 5px;
+
+}
+.btn-sm{
+padding: 6px;
+width: 100px;
+border: solid black;
+background: linear-gradient(to right, #ff105f,#ffad06);
+border-radius: 15px ;
+font-weight: bold;
+}
+.btn-sm:hover{
+ background-color: white;   
+}
+.bakground{
+    background: rgba(210, 50, 80, 2.5);
+    background-blend-mode: darken;
+}
+.groupname{
+    color: chartreuse;
+    margin-right: 70px;
+}
+.bakground .navlist .active-link{
+    font-weight: bold;
+    color: black;
+}
+
+.inner-footer{
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #70706cdb,#999);
+}
+.social-links{
+    display: flex;
+}
+
+.social-links ul{
+    display: flex;
+}
+.social-items{
+    list-style: none;
+    margin-top: 8px;
+}
+.social-items a{
+padding: 10px 20px;
+font-size: 35px;
+color: #6cccc6;
+}
+.outer-footer{
+margin-top: 20px;
+margin-left: 590px;
+margin-right: 400px;
+font-size: 20px;
+font-weight: bold;
+}
+.fa-facebook{
+    color: blue;
+    
+}
+.fa-twitter{
+color: #00acee;
+}
+.fa-square-instagram
+{
+    color:  #bc2a8d 
+}
+.fa-magnifying-glass{
+font-size: 18px;
+margin: 4px;
+}
+
+.btn-sm{
+    cursor: pointer;
+}

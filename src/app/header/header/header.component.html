@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<nav class="navbar bakground">
+    <ul class="navlist">
+        <div class="logo"><img src="assets\logo.jpg" alt="logo"></div>
+        <div>
+        <h3 class="groupname">We are Fighters!!</h3>
+        <h6>Dream Home, choices yours..</h6>
+    </div>
+    <li><a routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}"><i class="fa-solid fa-house"></i>Home</a></li>
+    <li><a routerLink="about-us" routerLinkActive="active-link"><i class="fa-solid fa-a">&nbsp;</i>about-us</a></li>
+    <li><a routerLink="contact-us" routerLinkActive="active-link"><i class="fa-solid fa-phone"></i>Contact</a></li>
+    <!-- <li><a routerLink="company" routerLinkActive="active-link"><i class="fa-solid fa-building"></i>Products</a></li> -->
+    <li><a routerLink="login" routerLinkActive="active-link"><i class="fa-solid fa-users"></i>Login</a></li>
+    <!-- <li><a routerLink="/login"><i class="fa-solid fa-right-to-bracket"></i>Logout</a></li> -->
+    </ul>
+    <div class="rightnav">
+    <input type="text" id="search" class="search" placeholder="Search here">&nbsp;&nbsp;&nbsp;<button class="btn btn-sm"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+    </div>
+    </nav>
+    <router-outlet></router-outlet>
+<footer class="footer"><div class="inner-footer"><div class="social-links">
+    <div class="outer-footer">
+        Copyright &copy; We are Fighters. All Rights Reserved
+    </div>
+    
+    <ul>
+    
+        <li class="social-items"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+        <li class="social-items"><a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+        <li class="social-items"><a href="https://twitter.com "><i class="fa-brands fa-twitter"></i></a></li>
+    </ul>
+    </div>
+</div></footer>
+
+
+
+</body>
+</html>

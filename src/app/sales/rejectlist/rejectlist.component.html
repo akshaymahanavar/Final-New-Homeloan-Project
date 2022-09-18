@@ -1,0 +1,32 @@
+
+<router-outlet></router-outlet>
+<div class="container">
+  <table class="table table-striped"  border="3" >
+    <tbody class="table-success">       
+      <th>FormNo</th>
+      <th>FullName</th>
+      <th>pancard</th>
+      <th>EmailId</th>
+      <th>Gender</th>
+      <th>Age</th>
+    <th>cibilscore</th>
+    <th>cibilstatus</th>
+    <th>Action</th>
+<tr *ngFor="let e of cibil">
+<td class="table-success">{{e.enquiryform.formno}}</td>
+<td class="table-secondary">{{e.enquiryform.fullname}}</td>
+<td class="table-primary">{{e.enquiryform.pancard}}</td> 
+<td class="table-success">{{e.enquiryform.email}}</td>
+<td class="table-success">{{e.enquiryform.gender}}</td>
+<td class="table-success">{{e.enquiryform.age}}</td>
+<td class="table-secondary">{{e.cibilscore}}</td>
+<td class="table-primary">{{e.cibilstatus}}</td>
+<td><button class="send" routerLink="rejectmail" [state]="e">Send email</button></td>
+</tbody>
+</table>
+</div>
+
+
+
+
+
