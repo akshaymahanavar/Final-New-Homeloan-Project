@@ -1,0 +1,153 @@
+.contact{
+
+    width: 100%;
+    height: 400px;
+    
+    
+    }
+    .backcolour{
+    margin-top: 300px;
+    height: 100%;
+    background:linear-gradient(to right, #161f27,#161f27);
+    
+     top: 0%;
+    /* bottom: 0%; 
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    right: 0%; */
+    }
+    .rampic img{
+        width: 100px;
+        height: 100px;
+        margin-left: 130px;
+      margin-top: 40px;
+    border: solid black;
+    border-radius: 50px;
+    }
+    .formbox{
+      width: 425px;
+      height: 450px;
+      position: relative;
+      background: linear-gradient(to right, #979aae,#dff0d8);
+      border: solid  #8a3ab9;
+      /* padding: 1px; */
+      /* margin: 7%; */
+      margin-left: 10px;
+      margin-top: -250px;
+      border-radius: 45px;
+      margin-left: 150px;
+      align-items: center;
+    }
+    h4{
+      margin-left: 115px;
+      margin-top: 15px;
+      font-weight: bold;
+      color:#161f27;
+    }
+    .bhu{
+      margin-left: 85px;
+      
+    }
+    .ra{
+      margin-left: 140px;
+    }
+    .ram{
+      margin-left: 120px;
+    }
+    .hea{
+      margin-left: 120px;
+    }
+    .heas{
+      margin-left: 90px;
+    }
+    h5{
+      margin-left: 40px;
+      margin-top: -20px;
+    }
+    .link{
+      color: blue;
+    }
+    .allteam{
+    display: flex;  
+    margin-top: 400px;
+    align-items: center;
+    align-self: center;
+    }
+    .allteam-2{
+      display: flex;  
+      margin-top: 295px;
+      }
+      .mob-left{
+    
+        position: absolute;
+        top: 42%;
+        color: #0077b5;
+        padding: 10px;
+        font-size: large;
+        margin-right: 520px;
+      
+      }
+      .mob-right{
+       position: absolute;
+         top:42%;
+         right: 3%;
+        color: white;
+        font-size: 70px;
+        padding: 10px;
+        
+      }
+    
+    
+    
+      .headline{
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 200px;
+        text-align: center;
+        
+      }
+     .search-container{
+         
+          margin-top: 160px;
+          margin-left: 570px;
+          font-size: large;
+    }
+    form{
+       background: #fff;
+       width: 600px;
+       height: 55px;
+       display: flex;
+      
+    }
+    form input{
+      
+      flex: 1;
+       border: none;
+    
+     
+    }
+    form button{
+       align-items: center;
+      background:tomato ;
+      /* width: 120px;
+      height: 55px; */
+      padding: 10px 25px;
+      border:none ;
+      outline: none;
+      color: #fff;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+    form .fa-magnifying-glass{
+      align-self: center;
+      padding: 10px 20px;
+      color: #777;
+    }
+    .new-logo{
+    
+      margin-top: -100px;
+      margin-left: 1500px;
+    
+    
+    }

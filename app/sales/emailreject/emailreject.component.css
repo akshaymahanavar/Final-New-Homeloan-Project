@@ -1,0 +1,46 @@
+.textbody{
+    margin-top: 0px;
+    height: 400px;
+    width: 540px;
+    margin-left: 630px;
+    background-image: url("src\assets\Gmail\gmails.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid black;
+}
+.to{
+    margin-top: 25px;
+    width: 400px;
+    padding: 4px;
+    margin-left: 52px;
+}
+.subject{
+    margin-top: 25px;
+    width: 400px;
+    padding: 14px;
+    margin-left: 13px;
+}
+.email{
+    margin-top: 25px;
+    width: 400px;
+    padding: 50px;
+}
+.send{
+    margin-left: 250px;
+    margin-top: 15px;
+    padding: 3px;
+    width: 100px;
+    border-radius: 25px;
+    color: black;
+    background-color: green;
+}
+.too{
+    margin-left: 25px;
+    color: black;
+}
+.fa-envelope{
+    font-size: 45px;
+    /* color: #4285F4 */
+    color: orangered;
+    margin-left: 240px;
+}
