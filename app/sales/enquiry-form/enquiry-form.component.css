@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.registerimage
+{
+    
+
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    margin-left: -600px;
+    background-size: 1000px;
+    position:absolute;
+    padding: 10px;
+
+}
+.main
+{
+    margin-top: -80px;
+    margin-left: 562px;
+   
+}
+.field
+{
+    width: 400px;
+    margin-left: 850px;
+    margin-top: -1000px;
+    color:tan ;
+}
+
+.title{
+
+    text-align: 150px    ;
+    text-decoration-color:black;
+    
+}
+.btn-primary
+{
+    padding: 12px;
+    margin: -1px ;
+    margin-top: -25px;
+    margin-left: 105px;
+    border-radius: 25px;
+}
+.register{
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: large;
+    border-radius: 10px;
+    
+
+}
+.btn-warning
+{
+    padding: 7px;
+    margin: -1px ;
+    margin-top: -90px;
+
+
+}

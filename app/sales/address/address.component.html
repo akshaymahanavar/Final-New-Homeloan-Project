@@ -1,0 +1,57 @@
+
+<marquee><h1 class="bankdetail"><i>Address Details Form</i></h1></marquee>
+<br>
+ <!-- <form class="custform" [formGroup]="customerform> -->
+    <form class="custform" [formGroup]="addressform" (ngSubmit)="saveaddress()">
+   <div class="mb-4">
+     <label  class="form-label" >Panno</label>
+     <input required="required" type="text" class="form-control" id="exampleInputNumber" formControlName="panno" placeholder="Enter panno">
+     <!-- <div *ngIf="addressform.controls['panno'].touched && addressform.controls['panno'].invalid">
+        <span *ngIf="addressform.controls['panno'].hasError('required')" style="color:red">Panno is required</span>
+        <span *ngIf="addressform.controls['panno'].hasError('minlength')" style="color:red">10 character is required</span>
+        <span *ngIf="addressform.controls['panno'].hasError('maxlength')" style="color:red">10 character is required</span>
+    </div> -->
+    </div>   
+   <div class="mb-5">
+    <label  class="form-label">AdharNo</label>
+    <input required="required" type="number" class="form-control" id="exampleInputNumber" formControlName="adharno" placeholder="Enter adharno">   
+    <!-- <div *ngIf="addressform.controls['adharno'].touched && addressform.controls['adharno'].invalid">
+        <span *ngIf="addressform.controls['adharno'].hasError('required')" style="color:red">Adharcardno is required</span>
+        <span *ngIf="addressform.controls['adharno'].hasError('minlength')" style="color:red">12 character is required</span>
+        <span *ngIf="addressform.controls['adharno'].hasError('maxlength')" style="color:red">12 character is required</span>
+    </div> -->
+
+</div>
+<div class="mb-5">
+    <label  class="form-label">Cityname</label>
+    <input required="required" type="text" class="form-control" id="exampleInputNumber" formControlName="cityname" placeholder="Enter cityname">   
+    <!-- <div *ngIf="addressform.controls['cityname'].touched && addressform.controls['cityname'].invalid">
+        <span *ngIf="addressform.controls['cityname'].hasError('required')" style="color:red">Cityname is required</span>
+        <span *ngIf="addressform.controls['cityname'].hasError('minlength')" style="color:red">minimum 2 character is required</span>
+        <span *ngIf="addressform.controls['cityname'].hasError('maxlength')" style="color:red"> maximum 10 character is required</span>
+    </div> -->
+
+</div>
+<div class="mb-5">
+    <label  class="form-label">AreaName</label>
+    <input required="required" type="text" class="form-control" id="exampleInputNumber" formControlName="areaname" placeholder="Enter areaname">   
+    <!-- <div *ngIf="addressform.controls['areaname'].touched && addressform.controls['areaname'].invalid">
+        <span *ngIf="addressform.controls['areaname'].hasError('required')" style="color:red">Areaname is required</span>
+        <span *ngIf="addressform.controls['areaname'].hasError('minlength')" style="color:red">minimum 3 character is required</span>
+        <span *ngIf="addressform.controls['areaname'].hasError('maxlength')" style="color:red"> maximum 40 character is required</span>
+    </div> -->
+
+</div>
+
+<div class="mb-5">
+    <label  class="form-label">PinCode</label>
+    <input required="required" type="number" class="form-control" id="exampleInputNumber" formControlName="pinno" placeholder="Enter pinno">   
+    <!-- <div *ngIf="addressform.controls['pinno'].touched && addressform.controls['adharno'].invalid">
+        <span *ngIf="addressform.controls['pinno'].hasError('required')" style="color:red">Pincode is required</span>
+        <span *ngIf="addressform.controls['pinno'].hasError('minlength')" style="color:red">minimum 4 character is required</span>
+        <span *ngIf="addressform.controls['pinno'].hasError('maxlength')" style="color:red">maximum 6 character is required</span>
+    </div> -->
+
+</div>
+ <button type="submit" class="btn btn-danger" [disabled]="!addressform.valid">NextPage<i class="fa-solid fa-forward"></i></button>
+</form> 

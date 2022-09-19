@@ -1,0 +1,57 @@
+p{
+    background-color:yellow;
+    padding: 8px;
+    border: solid black; 
+    text-align: center;
+     color:green;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    }
+.jumbotron{
+    margin-left: 450px;
+    background-color: black;
+    color: white;
+    width: 600px;
+    height: 100% auto;
+    border: solid greenyellow;
+}
+.textbox{
+ padding: 4px;
+ border: solid violet;
+ border-radius: 15px;
+ background-color: white;
+ text-align: center;   
+}
+
+.text{
+padding: 5px;
+
+}
+button{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: blueviolet;
+    border: solid hotpink;
+    border-radius: 25px;
+    margin-left: 200px;
+}
+.center{
+margin-top: 1px;
+}
+.head{
+    padding: 20px;
+    color: blue;
+    font-size: larger;
+    text-align: center;
+}
+button:hover{
+    background-color: yellow;
+    cursor:pointer;
+}
+.save{
+    width: 100px;
+    background-color: green;
+}
+.cibi{
+    left: 0;
+}

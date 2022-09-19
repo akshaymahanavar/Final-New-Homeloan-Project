@@ -1,0 +1,25 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CibilService } from 'src/app/common/cibil.service';
+import { Cibil } from 'src/app/model/cibil';
+import { EnquiryForm } from 'src/app/model/enquiry-form';
+@Component({
+  selector: 'app-approvedlist',
+  templateUrl: './approvedlist.component.html',
+  styleUrls: ['./approvedlist.component.css']
+})
+export class ApprovedlistComponent implements OnInit 
+{ 
+  constructor(private cs:CibilService,private router:Router){}
+  enq:EnquiryForm[];
+
+  ngOnInit(): void 
+  {
+    this.cs.getchecklist().subscribe(data =>{this.enq=data});
+    
+  }    
+  navigatetocustomer(){
+this.router.navigate(['login/sales','customerdetails']);
+  }
+}
+ 

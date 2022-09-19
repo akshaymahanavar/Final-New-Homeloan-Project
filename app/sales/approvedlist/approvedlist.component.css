@@ -1,0 +1,24 @@
+.table-striped
+{
+    background-color:cornflowerblue;   
+}
+.send{
+    background-color: green;
+}
+.btn-primary
+{
+    border: solid black;
+    color: black;
+    width: 105px;
+}
+.btn-warning{
+    border: solid black;
+    color: black;
+    width: 105px;
+}
+.btn-primary:hover{
+    color: white;
+}
+.btn-warning:hover{
+    color: white;
+}

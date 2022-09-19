@@ -1,0 +1,43 @@
+.docu{
+    margin-left: 50px;
+    margin-top: 50px;
+  
+}
+.btn-warning{
+    margin-left: 1200px;
+    margin-top: -55px;
+}
+.btn-danger{
+    margin-left: 500px;
+background-color: green;
+
+}
+.btn-danger:hover{
+    color: black;
+}
+.textbox{
+    margin-left: 550px;
+    border: solid black;
+    width: 720px;   
+    height: 1000px;
+}
+.choose{
+    background: linear-gradient(to right, #ff105f,#ffad06);
+}
+.font{
+    font-size: 20px;
+    margin-left: 25px;
+}
+.marq{
+    color: blue;
+}
+.upl{
+
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 35px;
+}
+.Successfull
+{
+    background-color: black;
+}
