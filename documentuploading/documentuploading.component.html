@@ -1,0 +1,53 @@
+<p>upload-document works!</p>
+<div>
+<form  [formGroup]="formDoc"  (ngSubmit)="saveDoc()">
+    
+    Photo: &nbsp;&nbsp;<input type="file" (change)="onselectphoto1($event)"><br><br>  
+<img [src]="imageSrc1" height="50">
+Pancard: &nbsp;&nbsp;<input type="file" (change)="onselectphoto2($event)"><br><br>  
+<img [src]="imageSrc1" height="50">
+Adharcard: &nbsp;&nbsp;<input type="file" (change)="onselectphoto3($event)"><br><br>  
+<img [src]="imageSrc1" height="50">
+Propertydocument: &nbsp;&nbsp;<input type="file" (change)="onselectphoto4($event)"><br><br>  
+<img [src]="imageSrc1" height="50">
+Bankpassbook: &nbsp;&nbsp;<input type="file" (change)="onselectphoto5($event)"><br><br>  
+<img [src]="imageSrc1" height="50">
+   Signature : &nbsp;&nbsp;<input type="file" (change)="onselectphoto6($event)"><br><br>
+   <img [src]="imageSrc2" height="50">
+   Electricitybill : &nbsp;&nbsp;<input type="file" (change)="onselectphoto7($event)"><br><br>
+   <img [src]="imageSrc3" height="50">
+<button type="submit" class="btn btn-danger">AddDocument</button><br><br>
+ </form>
+</div>
+<div>
+    <button (click)="getDocument()" class="btn btn-warning">getDocuments</button><br><br>
+    <button (click)="generatePdf()" class="btn btn-primary">Open PDF</button>&nbsp;&nbsp;
+</div>
+<div class="container" id="htmldata">
+    <h1 style="color:darkblue"class="container  col-md-4">Document_List</h1><br>
+      <table class="table table-striped" border="2">
+    <thead>
+      <tr>   
+        <th>docid</th>
+        <th>Photo</th>
+        <th>Signatue</th>
+        <th>Electricitybill</th>
+        <th>Pancard</th>
+        <th>Adharcard</th>
+        <th>Propertydocument</th>
+        <th>Bankpassbook</th>
+      </tr>
+    </thead>
+    <tbody *ngIf=retriveDoc>
+      <tr *ngFor="let d of retriveDoc">
+        <td>{{d.docid}}</td>
+        <td><img [src]="'data:image/jpeg;base64,'+d.photo" height="150"></td>
+        <td><img [src]="'data:image/jpeg;base64,'+d.signature" height="150"></td>
+        <td><img [src]="'data:image/jpeg;base64,'+d.electricitybill" height="150"></td> 
+        <td><img [src]="'data:image/jpeg;base64,'+d.pancard" height="150"></td> 
+        <td><img [src]="'data:image/jpeg;base64,'+d.adharcard" height="150"></td> 
+        <td><img [src]="'data:image/jpeg;base64,'+d.propertydocument" height="150"></td> 
+        <td><img [src]="'data:image/jpeg;base64,'+d.bankpassbook" height="150"></td> 
+      </tr>
+      </tbody>
+  </table>
