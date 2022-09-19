@@ -23,12 +23,10 @@ public class AddressController
 
 
 
-@PostMapping(value ="/sendAddress/{cutomerid}")
-public ResponseEntity<Address> sendaddress(@RequestBody Address addr,@PathVariable Integer cutomerid )
+@PostMapping(value ="/sendAddress/{customerid}")
+public ResponseEntity<Address> sendaddress(@RequestBody Address addr,@PathVariable Integer customerid )
 {
-  
-	
-	return  new ResponseEntity<>(addressservicei.sendaddress(addr,cutomerid),HttpStatus.OK);
+return  new ResponseEntity<>(addressservicei.sendaddress(addr,customerid),HttpStatus.OK);
 }
 	
 	

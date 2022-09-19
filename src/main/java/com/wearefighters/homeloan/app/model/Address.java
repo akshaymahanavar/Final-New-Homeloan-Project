@@ -14,11 +14,11 @@ public class Address
 	@Id
 @GeneratedValue(strategy = GenerationType.AUTO)
   private Integer  addrid;
-  private Integer panno;
-  private Integer adharno;
+  private String panno;
+  private Long adharno;
   private String cityname;
   private String areaname;
-  private Integer pinno;
+  private Long pinno;
 	
 	
 

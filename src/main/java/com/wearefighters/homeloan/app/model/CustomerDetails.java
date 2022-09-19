@@ -16,7 +16,7 @@ public class CustomerDetails
 {
 	@Id
    @GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer cutomerid;
+	private Integer customerid;
 	private String fullname;
 	private Long mobileno;
 	private Integer age;
@@ -28,5 +28,13 @@ private Address addr;
 
 @OneToOne(cascade =CascadeType.ALL )
 private BankDetail bank;
+
+
+@OneToOne(cascade = CascadeType.ALL)
+private Document document;
+
+
+
+
 	 
 }

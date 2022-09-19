@@ -18,16 +18,16 @@ public class AddressServiceImpl implements AddressServiceI
 	
 	@Autowired private AddressRepository addresrepository;
      
-	@Autowired private CustomerRepository cutomerrepository;
+	@Autowired private CustomerRepository customerrepository;
 	
 	
 	@Override
-	public Address sendaddress(Address addr, Integer cutomerid)
+	public Address sendaddress(Address addr, Integer customerid)
 	{
 		
 		Address address=new Address();
 		
-	   Optional<CustomerDetails> customer=cutomerrepository.findById(cutomerid);
+	   Optional<CustomerDetails> customer=customerrepository.findById(customerid);
 		             
 	   if(customer.isPresent())
 	   {
@@ -44,7 +44,7 @@ public class AddressServiceImpl implements AddressServiceI
 		    custo.setAddr(address);
 		    
 		    addresrepository.save(address);
-		    cutomerrepository.save(custo);
+		    customerrepository.save(custo);
 		    
 		    
 		    
