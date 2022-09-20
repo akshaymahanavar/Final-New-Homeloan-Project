@@ -26,7 +26,7 @@ public class AddressController
 @PostMapping(value ="/sendAddress/{customerid}")
 public ResponseEntity<Address> sendaddress(@RequestBody Address addr,@PathVariable Integer customerid )
 {
-return  new ResponseEntity<>(addressservicei.sendaddress(addr,customerid),HttpStatus.OK);
+return  new ResponseEntity<Address>(addressservicei.sendaddress(addr,customerid),HttpStatus.OK);
 }
 	
 	

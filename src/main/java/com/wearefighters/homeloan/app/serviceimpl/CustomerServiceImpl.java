@@ -25,7 +25,7 @@ public class CustomerServiceImpl implements CustomerServiceI
 
 
 	@Override
-	public List<CustomerDetails> getalldata(CustomerDetails customer) 
+	public List<CustomerDetails> getalldata() 
 	{
 		return  customerrepository.findAll();
 	}

@@ -31,9 +31,9 @@ return new ResponseEntity<>(customerservicei.senddetails(customer),HttpStatus.OK
 }
 
 @GetMapping(value ="/getalldata")
-public List<CustomerDetails>getalldata(@RequestBody CustomerDetails customer)
+public List<CustomerDetails>getalldata()
 {
-	   return  customerservicei.getalldata(customer);
+	   return  customerservicei.getalldata();
 }
 
 

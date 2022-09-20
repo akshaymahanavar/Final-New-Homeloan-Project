@@ -49,6 +49,7 @@ public class EnquiryFormServiceImpl implements EnquiryFormServiceI
 		return enquiryrepository.findAll();
 	}
 
+	
 	   //approve
     @Override
 	public Iterable<EnquiryForm> getchecklistapprove()
@@ -63,16 +64,16 @@ public class EnquiryFormServiceImpl implements EnquiryFormServiceI
 	{
 	  try {
 	  
-	      if(enq.getCibil().getCibilstatus().equalsIgnoreCase("approve"))
-	      {
-		    approvelist.add(enq);
-	      }
-	   } 
-    catch (Exception e) 
-    {
-	  e.printStackTrace();		
-    }
-  }
+	         if(enq.getCibil().getCibilstatus().equalsIgnoreCase("approve"))
+	         {
+		     approvelist.add(enq);
+	         }
+	      } 
+      catch (Exception e) 
+      {
+	   e.printStackTrace();		
+      }
+   }
 	
 return  approvelist;
 	}

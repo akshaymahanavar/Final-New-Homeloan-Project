@@ -30,20 +30,20 @@ public class AddressServiceImpl implements AddressServiceI
 	   Optional<CustomerDetails> customer=customerrepository.findById(customerid);
 		             
 	   if(customer.isPresent())
-	   {
+	     {
 		 
-		  CustomerDetails custo= customer.get(); 
+		  CustomerDetails custo=customer.get(); 
 		   
 		     
-		  address.setPanno(addr.getPanno());
-		  address.setAdharno(addr.getAdharno());
-		  address.setCityname(addr.getCityname());
-		  address.setAreaname(addr.getAreaname());
-		  address.setPinno(addr.getPinno());
+		   address.setPanno(addr.getPanno());
+		   address.setAdharno(addr.getAdharno());
+		   address.setCityname(addr.getCityname());
+		   address.setAreaname(addr.getAreaname());
+		   address.setPinno(addr.getPinno());
 		  
-		    custo.setAddr(address);
+		     custo.setAddr(address);                          
 		    
-		    addresrepository.save(address);
+		    addresrepository.save(address);        
 		    customerrepository.save(custo);
 		    
 		    

@@ -9,7 +9,7 @@ public interface CustomerServiceI
 
 public CustomerDetails senddetails(CustomerDetails customer);
 
-public List<CustomerDetails> getalldata(CustomerDetails customer);
+public List<CustomerDetails> getalldata();
 
 
 }
