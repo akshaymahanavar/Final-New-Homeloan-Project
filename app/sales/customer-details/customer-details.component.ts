@@ -20,7 +20,8 @@ export class CustomerDetailsComponent implements OnInit {
         mobileno:['',[Validators.required,Validators.maxLength(10)]],
         age:['',[Validators.required]],
         gender:['',[Validators.required]],
-        dob:['',[Validators.required]]
+        dob:['',[Validators.required]],
+        email:['',[Validators.required]]
     })
 
   }

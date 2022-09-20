@@ -20,7 +20,7 @@
             </div>
             <form id="login" class="group" [formGroup]="loginForm" (ngSubmit)="navigateTologin()">
                 <h5>UserName:</h5><input type="text" class="input-field" formControlName="userName" placeholder="Enter UserName" required>
-                <h5>Password:</h5><input type="text" class="input-field" formControlName="password" placeholder="Enter Password" required><br><br>
+                <h5>Password:</h5><input type="password" class="input-field" formControlName="password" placeholder="Enter Password" required><br><br>
                 <input type="checkbox" class="checkbox" required>&nbsp;<span>Remember Password</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
                 <button type="submit" class="submit-btn" [disabled]="!loginForm.valid">Login</button>
               <h5 style="color: red">{{msg}}</h5>

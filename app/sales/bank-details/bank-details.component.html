@@ -20,5 +20,5 @@
     <label  class="form-label">Branchcode</label>
     <input type="text" class="form-control" id="exampleInputNumber" formControlName="branchcode" placeholder="Enter Branchcode">   
 </div>
- <button type="submit" class="btn btn-danger" >NextPage<i class="fa-solid fa-forward"></i></button>
+ <button type="submit" class="btn btn-danger" [disabled]="!bankform.valid">NextPage<i class="fa-solid fa-forward"></i></button>
 </form> 

@@ -11,14 +11,17 @@
   }
   .container{
     width: 505px;
-   background-color: rgb(32, 30, 30);
+   background-color: white;
+   height: 500px;
+   margin-top: 15px;
   }
   .heading{
     text-align: center;
     font-size: 30px;    
     font-weight: bold;
-    color:whitesmoke;
+    color: black;
     margin-top: 35px;
+    
   }
   .input
   {
@@ -29,7 +32,7 @@
   }
   .words
   {
-    color: aliceblue;
+    color: black;
   }
   .output{
     margin: 10px;    

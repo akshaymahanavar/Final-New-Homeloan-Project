@@ -27,6 +27,10 @@ export const headerroutes: Routes = [
   },
   {
     path:'login/operation',loadChildren:()=>import('src/app/operation/operational-executive/operational-executive.module').then(module=>module.OperationalExecutiveModule)
+  },
+
+  {
+    path:'login/credit',loadChildren:()=>import('src/app/credit/creditmanager/creditmanager.module').then(module=>module.CreditmanagerModule)
   }
   
 ];

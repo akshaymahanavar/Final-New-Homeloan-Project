@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class RejectemailService {
+export class emailService {
   rejectmail:string="http://localhost:7777/mail/sendEmail/Reject/"
   constructor(private http:HttpClient) { }
 

@@ -1,5 +1,7 @@
 import { Address } from "./address"
 import { BankDetails } from "./bank-details"
+import { Customerstatus } from "./customerstatus"
+import { Document } from "./document"
 
     export class CustomerDetail 
     {customerid:number
@@ -8,8 +10,10 @@ import { BankDetails } from "./bank-details"
     age:number
     gender:string
     dob:string
-
+    email:string
     addr:Address
     bank:BankDetails
-
+    document:Document
+    status:Customerstatus
+     
 }

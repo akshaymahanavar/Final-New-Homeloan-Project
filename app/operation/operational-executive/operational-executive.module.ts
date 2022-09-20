@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ChecklistComponent } from '../checklist/checklist.component';
 import { CibilscoreComponent } from '../cibilscore/cibilscore.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CustomerlistComponent } from '../customerlist/customerlist.component';
+import { DocumentverificationComponent } from '../documentverification/documentverification.component';
 
 
 console.log("operation module works");
@@ -22,7 +24,9 @@ console.log("operation module works");
   declarations: [
     OperationalExecutiveComponent,
     ChecklistComponent,
-    CibilscoreComponent
+    CibilscoreComponent,
+    CustomerlistComponent,
+    DocumentverificationComponent
   ],
   imports: [
     CommonModule,

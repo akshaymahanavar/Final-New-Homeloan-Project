@@ -10,13 +10,17 @@ import { LoanOfficerModule } from './sales/loan-officer/loan-officer.module';
 import { OperationalExecutiveModule } from './operation/operational-executive/operational-executive.module';
 import { CommonService } from './common/common.service';
 import { HttpClientModule } from '@angular/common/http';
+import { DocumentverificationComponent } from './operation/documentverification/documentverification.component';
+import { ApprovedcustomerlistComponent } from './creditmanager/approvedcustomerlist/approvedcustomerlist.component';
+
 
 
 console.log("app module works");
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ApprovedcustomerlistComponent
 
   
   ],

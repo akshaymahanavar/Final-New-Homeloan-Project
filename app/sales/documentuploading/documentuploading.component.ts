@@ -35,62 +35,56 @@ export class DocumentuploadingComponent implements OnInit {
 msg:string
   ngOnInit(): void {
     this.formDoc=this.fb.group({
-      photo:[''],
-      signature:[''],
-      electricbill:[''],
-      adharcard:[''],
-      pancard:[''],
-      propertydocument:[''],
-      bankpassbook:['']
+      photo:['',[Validators.required]],
+      signature:['',[Validators.required]],
+      electricbill:['',[Validators.required]],
+      adharcard:['',[Validators.required]],
+      pancard:['',[Validators.required]],
+      propertydocument:['',[Validators.required]],
+      bankpassbook:['',[Validators.required]]
     })
 
 
 
   }
   onselectphoto1(event){
-    alert("call 2 photo");
+
     this.selectphoto1  =event.target.files[0];
    
     this.reader.onload = e => this.imageSrc1 = this.reader.result;
        this.reader.readAsDataURL(this.selectphoto1);
     }
     onselectphoto2(event){
-      alert("call 2 photo");
       this.selectphoto2  =event.target.files[0];
      
       this.reader.onload = e => this.imageSrc2 = this.reader.result;
          this.reader.readAsDataURL(this.selectphoto2);
       }
       onselectphoto3(event){
-        alert("call 2 photo");
         this.selectphoto3  =event.target.files[0];
        
         this.reader.onload = e => this.imageSrc3 = this.reader.result;
            this.reader.readAsDataURL(this.selectphoto3);
         }
         onselectphoto4(event){
-          alert("call 2 photo");
           this.selectphoto4  =event.target.files[0];
          
           this.reader.onload = e => this.imageSrc4= this.reader.result;
              this.reader.readAsDataURL(this.selectphoto4);
           }
           onselectphoto5(event){
-            alert("call 2 photo");
             this.selectphoto5  =event.target.files[0];
            
             this.reader.onload = e => this.imageSrc5 = this.reader.result;
                this.reader.readAsDataURL(this.selectphoto5);
             }
             onselectphoto6(event){
-              alert("call 2 photo");
               this.selectphoto6  =event.target.files[0];
              
               this.reader.onload = e => this.imageSrc6 = this.reader.result;
                  this.reader.readAsDataURL(this.selectphoto6);
               }
               onselectphoto7(event){
-                alert("call 2 photo");
                 this.selectphoto7  =event.target.files[0];
                
                 this.reader.onload = e => this.imageSrc7 = this.reader.result;
@@ -103,10 +97,10 @@ msg:string
                     // create object of formData
                     const docupload=new FormData;
                     docupload.append("photo",this.selectphoto1);
-                    docupload.append("signature",this.selectphoto2);
+                    docupload.append("pancard",this.selectphoto2);
                     docupload.append("electricbill",this.selectphoto3);
                     docupload.append("adharcard",this.selectphoto4);
-                    docupload.append("pancard",this.selectphoto5);
+                    docupload.append("signature",this.selectphoto5);
                     docupload.append("propertydocument",this.selectphoto6);
                     docupload.append("bankpassbook",this.selectphoto7);
                   

@@ -19,7 +19,7 @@
   <td class="table-success">&nbsp; {{e.age}}</td>
   <td class="table-secondary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{e.cibil.cibilscore}}</td>
   <td class="table-primary">{{e.cibil.cibilstatus}}</td>
-  <td><button class="btn btn-primary">Send mail</button></td> 
+  <td><button class="btn btn-primary" type="submit" (click)="mailsend(e)">Send mail</button></td> 
  <td><button class="btn btn-warning" (click)="navigatetocustomer()">Proceed</button></td>
   </tbody>
   </table>

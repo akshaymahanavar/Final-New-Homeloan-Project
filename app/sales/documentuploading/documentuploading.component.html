@@ -8,17 +8,18 @@
 <img [src]="imageSrc1" height="50"><br><br>
 <b class="font">Pancard:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto2($event)" class="choose" formControlName="pancard"> 
 <img [src]="imageSrc2" height="50"><br><br>
-<b class="font">Adharcard:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto3($event)" class="choose" formControlName="adharcard">  
+<b class="font">Electricitybill:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto3($event)" class="choose" formControlName="adharcard">  
 <img [src]="imageSrc3" height="50"><br><br>
-<b class="font">Propertydocument:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto4($event)" class="choose" formControlName="propertydocument"> 
+<b class="font">Adharcard:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto4($event)" class="choose" formControlName="propertydocument"> 
 <img [src]="imageSrc4" height="50"><br><br>
-<b class="font">Bankpassbook:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto5($event)" class="choose" formControlName="bankpassbook"> 
+<b class="font">Signature:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto5($event)" class="choose" formControlName="bankpassbook"> 
 <img [src]="imageSrc5" height="50"><br><br>
-   <b class="font">Signature:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto6($event)" class="choose" formControlName="signature">
+   <b class="font">Property Documents:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto6($event)" class="choose" formControlName="signature">
    <img [src]="imageSrc6" height="50"><br><br>
-   <b class="font">Electricitybill:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto7($event)" class="choose" formControlName="electricbill">
+   <b class="font">Bankpassbook:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto7($event)" class="choose" formControlName="electricbill">
    <img [src]="imageSrc7" height="50"><br><br>
-<button type="submit" class="btn btn-danger">Save & proceed</button><br><br>
+<button type="submit" class="btn btn-danger" [disabled]="!formDoc.valid">Save & proceed</button><br><br>
+<button type="submit" class="btn btn-success" routerLink="/login/sales">Back</button><br><br>
 <b style="color: greenyellow" class="Successfull"><i>{{msg}}</i></b>
  </form>
 </div>

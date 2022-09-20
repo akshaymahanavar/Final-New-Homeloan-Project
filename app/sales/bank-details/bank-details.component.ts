@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CustomerDetailService } from 'src/app/common/customer-detail.service';
 
@@ -14,10 +14,10 @@ export class BankDetailsComponent implements OnInit {
   bankform:FormGroup
   ngOnInit(): void {
     this.bankform=this.fb.group({
-      accountno:[''],
-      ifsccode:[''],
-      bankname:[''],
-      branchcode:['']
+      accountno:['',[Validators.required]],
+      ifsccode:['',[Validators.required]],
+      bankname:['',[Validators.required]],
+      branchcode:['',[Validators.required]]
     })
 
   }

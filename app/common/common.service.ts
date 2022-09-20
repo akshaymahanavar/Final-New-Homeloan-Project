@@ -8,6 +8,9 @@ import { EnquiryForm } from '../model/enquiry-form';
   providedIn: 'root'
 })
 export class CommonService {
+  getchecklist() {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private http:HttpClient) { }
   postenq:string="http://localhost:7777/api/sendenquiryform/";

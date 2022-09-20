@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import { Address } from '../model/address';
 import { BankDetails } from '../model/bank-details';
 import { CustomerDetail } from '../model/customer-detail';
+import { Customerstatus } from '../model/customerstatus';
+import { Document } from '../model/document';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +21,10 @@ customer:CustomerDetail
 
   postdocurl:string="http://localhost:7777/savedocumnent/";
 
+  poststatusurl:string="http://localhost:7777/savedocumnent/";
+
+  getcustomerurl:string="http://localhost:7777/getalldata "
+
   constructor(private http:HttpClient) { }
   c:CustomerDetail={
     customerid: 0,
@@ -28,7 +34,10 @@ customer:CustomerDetail
     gender: '',
     dob: '',
     addr: new Address,
-    bank: new BankDetails
+    bank: new BankDetails,
+    document: new Document,
+    email: '',
+    status: new Customerstatus
   }
 
 
@@ -51,5 +60,17 @@ savedocument(doc:any)
 {
   alert("docid:"+doc.docid);
   return this.http.post(this.postdocurl+this.c.customerid,doc);
+}
+poststatus(status:any,customerid:number)
+{ alert("in service")
+  alert("id"+customerid);
+  
+  return this.http.post(this.poststatusurl+customerid,status);
+}
+
+
+getcustomer():Observable<CustomerDetail[]>
+{ 
+  return this.http.get<CustomerDetail[]>(this.getcustomerurl);
 }
 }

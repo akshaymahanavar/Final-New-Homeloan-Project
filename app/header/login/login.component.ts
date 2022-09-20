@@ -30,9 +30,9 @@ export class LoginComponent implements OnInit {
   }
    else{
     if
-    (this.loginForm.get(['userName']).value==="ins" && this.loginForm.get(['password']).value==="ins"){
-      //    this.router.navigate(['login/inspection']);
-         this.router.navigateByUrl("login/inspection");
+    (this.loginForm.get(['userName']).value==="credit" && this.loginForm.get(['password']).value==="credit"){
+         // this.router.navigate(['login/credit']);
+         this.router.navigateByUrl("login/credit");
 
    }
 
