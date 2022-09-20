@@ -1,0 +1,32 @@
+
+<router-outlet></router-outlet>
+<div class="container">
+  <table class="table table-striped"  border="3" >
+    <tbody class="table-success">       
+      <th>FormNo</th>
+      <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FullName</th>
+      <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pancard</th>
+      <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EmailId</th>
+      <th>Gender</th>
+      <th>&nbsp; Age</th>
+    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cibilscore</th>
+    <th>cibilstatus</th>
+    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</th>
+<tr *ngFor="let e of enq">
+<td class="table-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{e.formno}}</td>
+<td class="table-secondary">&nbsp;&nbsp;&nbsp;&nbsp;{{e.fullname}}</td>
+<td class="table-primary">&nbsp;&nbsp;{{e.pancard}}</td> 
+<td class="table-success">&nbsp;&nbsp;&nbsp;&nbsp;{{e.email}}</td>
+<td class="table-success">&nbsp;&nbsp;{{e.gender}}</td>
+<td class="table-success">&nbsp; {{e.age}}</td>
+<td class="table-secondary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{e.cibil.cibilscore}}</td>
+<td class="table-primary">{{e.cibil.cibilstatus}}</td>
+<td><button class="send" routerLink="rejectmail" [state]="e">Send email</button></td>
+</tbody>
+</table>
+</div>
+
+
+
+
+

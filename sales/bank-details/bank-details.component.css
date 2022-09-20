@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-control
+{   margin-top: -35px;
+    margin-left: 150px;
+    width: 700px;
+    padding: 10px;
+}
+.bankdetail{
+    color: blue;
+}
+.custform{
+    margin-left: 450px;
+    margin-top: 50px;
+}
+.form-label{
+    font-weight: bold;
+    font-size: 20px;
+}
+.male{
+    margin-left: 100px;
+    font-size: 20px;
+}
+.btn-danger{
+    margin-left: 850px;
+    padding: 17px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border: solid black;
+    border-radius: 55px;
+}
+.fa-forward{
+    margin-left: 15px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+.btn-danger:hover{
+     color: white;
+}

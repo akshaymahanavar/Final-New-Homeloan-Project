@@ -1,0 +1,9 @@
+
+    <form [formGroup]="emailform" (ngSubmit)="emailsend()" class="textbody">
+    <i class="fa-solid fa-envelope"></i><br>
+<b class="too">To</b>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  class="to" formControlName="toEmail"><br>
+<b class="too"> Subject</b>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="xxxxxx" class="subject" formControlName="subject"><br>
+<b class="too"> Compose</b>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Type Here...." class="email" formControlName="textBody"><br>
+<button class="send" [disabled]="!emailform.valid" type="submit">Send</button><br><br><br><br>
+</form>
+<br><br>

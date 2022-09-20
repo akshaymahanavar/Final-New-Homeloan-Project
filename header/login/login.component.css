@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    background-image: url("src\assets\Home.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    
+}
+
+.loginpage{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4)); /* we are add one layer over the background image */
+    position: absolute;    
+    }
+.formbox{
+    width: 495px;
+    height: 685px;    
+    position: relative;
+    background:white;
+    padding: 1px;
+    margin: 7% auto;
+    margin-left: 680px;
+    margin-top: 0px;
+    border: solid black;
+    right: 50px;
+}
+.button-box{
+ width: 190px;
+ margin: 35px auto;
+ position: relative;
+ box-shadow: 0 0 10px 1px gray;
+ border-radius: 30px;
+ margin-top: 95px;   
+}
+.toggle-btn{
+padding: 5px 26px;
+cursor: pointer;
+background: transparent;
+border: 0;
+outline: none;
+position: relative;  
+  
+}
+#btn{
+ top: 0;
+ left: 0;
+ position: absolute;
+ width: 100px;
+ height: 100%;
+ background: linear-gradient(to right, #ff105f,#ffad06);
+ border-radius: 30px;
+ transition: 0.5s;   
+}
+.social-icons{
+ margin: 30px auto;
+ text-align: center;   
+
+}
+.social-icons img{width: 30px;
+    margin: 5px 5px;
+    box-shadow:0 0 20px 0 #7f7f7f3d; 
+    cursor: pointer;
+    border-radius: 50%;    
+}
+.group{
+top: 180px;
+position:absolute;
+width: 180px;
+left: 130px;
+transition: 0.5s;
+margin-top: 85px;
+}
+.input-field{
+ width: 280px;
+ padding: 5px ;
+ margin: 7px;
+ border-left: 0;
+ border-top: 0;
+ border-right: 0;
+ border-bottom: 1px solid #999; 
+}
+.submit-btn{
+ width: 80%;
+ padding: 10px 5px;
+ cursor: pointer;
+ display: block;
+ margin: auto;
+ background: linear-gradient(to right, #ff105f,#ffad06);
+ border: 0;
+ outline: none;
+ border-radius: 30px;
+    
+}
+.submit-btn:hover{
+color: white;
+}
+h4{
+    color: red;
+    text-align: left 555px;
+    padding: 15px;
+    
+}
+.toggle-btn:hover{
+    color: blue;
+}
+.fa-facebook{
+    color: blue;
+    font-size: 40px;
+    margin-right: 10px;
+}
+.fa-twitter{
+color: #00acee;
+font-size: 40px;
+margin-left: 10px;
+}
+.fa-square-instagram
+{    font-size: 40px;
+    color:  #bc2a8d 
+}

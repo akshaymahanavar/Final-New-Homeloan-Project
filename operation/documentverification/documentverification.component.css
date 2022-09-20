@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.imagess img{
+height: 300px;
+    width: 300px;
+    margin: 25px;
+    border: solid black;
+}
+.imag img{
+    height: 300px;
+    width: 300px;
+    margin: 25px;
+    border: solid black;
+    
+}
+h4{
+    margin-left: 125px;
+    font-weight: bold;
+}
+.small{
+    margin-left: 240px;
+    margin-top: 70px;
+}
+.docs{
+border: solid black;
+
+}

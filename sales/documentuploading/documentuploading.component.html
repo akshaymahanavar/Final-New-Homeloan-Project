@@ -1,0 +1,56 @@
+<marquee class="marq"><h1><i>Customer Document Details...!!</i></h1></marquee>
+
+
+<div class="textbox">
+  <h4 class="upl" >Upload Documents</h4>
+<form  [formGroup]="formDoc"  (ngSubmit)="saveDoc()" class="docu">
+   <b class="font">Photo:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto1($event)" class="choose" formControlName="photo">
+<img [src]="imageSrc1" height="50"><br><br>
+<b class="font">Pancard:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto2($event)" class="choose" formControlName="pancard"> 
+<img [src]="imageSrc2" height="50"><br><br>
+<b class="font">Adharcard:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto3($event)" class="choose" formControlName="adharcard">  
+<img [src]="imageSrc3" height="50"><br><br>
+<b class="font">Propertydocument:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto4($event)" class="choose" formControlName="propertydocument"> 
+<img [src]="imageSrc4" height="50"><br><br>
+<b class="font">Bankpassbook:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto5($event)" class="choose" formControlName="bankpassbook"> 
+<img [src]="imageSrc5" height="50"><br><br>
+   <b class="font">Signature:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto6($event)" class="choose" formControlName="signature">
+   <img [src]="imageSrc6" height="50"><br><br>
+   <b class="font">Electricitybill:</b><br> &nbsp;&nbsp;<input type="file" (change)="onselectphoto7($event)" class="choose" formControlName="electricbill">
+   <img [src]="imageSrc7" height="50"><br><br>
+<button type="submit" class="btn btn-danger">Save & proceed</button><br><br>
+<b style="color: greenyellow" class="Successfull"><i>{{msg}}</i></b>
+ </form>
+</div>
+<!-- <div>
+    <button (click)="getDocument()" class="btn btn-warning">getDocuments</button><br><br>
+    <button (click)="generatePdf()" class="btn btn-primary">Open PDF</button>&nbsp;&nbsp;
+</div> -->
+<!-- <div class="container" id="htmldata">
+    <h1 style="color:darkblue"class="container  col-md-4">Document_List</h1><br>
+      <table class="table table-striped" border="2">
+    <thead>
+      <tr>   
+        <th>docid</th>
+        <th>Photo</th>
+        <th>Signatue</th>
+        <th>Electricitybill</th>
+        <th>Pancard</th>
+        <th>Adharcard</th>
+        <th>Propertydocument</th>
+        <th>Bankpassbook</th>
+      </tr>
+    </thead>
+    <tbody *ngIf=retriveDoc>
+      <tr *ngFor="let d of retriveDoc">
+        <td>{{d.docid}}</td>
+        <td><img [src]="'data:image/jpeg;base64,'+d.photo" height="150"></td>
+        <td><img [src]="'data:image/jpeg;base64,'+d.signature" height="150"></td>
+        <td><img [src]="'data:image/jpeg;base64,'+d.electricitybill" height="150"></td> 
+        <td><img [src]="'data:image/jpeg;base64,'+d.pancard" height="150"></td> 
+        <td><img [src]="'data:image/jpeg;base64,'+d.adharcard" height="150"></td> 
+        <td><img [src]="'data:image/jpeg;base64,'+d.propertydocument" height="150"></td> 
+        <td><img [src]="'data:image/jpeg;base64,'+d.bankpassbook" height="150"></td> 
+      </tr>
+      </tbody>
+  </table> -->
