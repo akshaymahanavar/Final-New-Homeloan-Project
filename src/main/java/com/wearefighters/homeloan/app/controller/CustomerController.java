@@ -19,21 +19,21 @@ import com.wearefighters.homeloan.app.servicei.CustomerServiceI;
 public class CustomerController 
 {
 	
-	
-@Autowired  private CustomerServiceI customerservicei;
+   @Autowired  private CustomerServiceI customerservicei;
 
-
+//send data
 @PostMapping(value = "/sendcustomerdetails")
 public ResponseEntity<CustomerDetails> senddetails(@RequestBody CustomerDetails customer)
 {
 	
-return new ResponseEntity<>(customerservicei.senddetails(customer),HttpStatus.OK);
+return new ResponseEntity<CustomerDetails>(customerservicei.senddetails(customer),HttpStatus.CREATED);
 }
 
+//get All data
 @GetMapping(value ="/getalldata")
-public List<CustomerDetails>getalldata()
+public ResponseEntity<List<CustomerDetails>>getalldata()
 {
-	   return  customerservicei.getalldata();
+return new ResponseEntity<List<CustomerDetails>>(customerservicei.getalldata(),HttpStatus.OK);
 }
 
 

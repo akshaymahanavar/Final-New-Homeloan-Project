@@ -35,4 +35,7 @@ private Document document;
 @OneToOne(cascade =CascadeType.ALL )
 private CustomerStatus status;
 
+@OneToOne(cascade = CascadeType.ALL)
+private Emi emi;
+
 }

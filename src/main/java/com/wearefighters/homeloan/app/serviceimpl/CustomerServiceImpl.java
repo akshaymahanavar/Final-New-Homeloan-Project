@@ -13,7 +13,7 @@ import com.wearefighters.homeloan.app.servicei.CustomerServiceI;
 @Service 
 public class CustomerServiceImpl implements CustomerServiceI
 {
-@Autowired private CustomerRepository customerrepository;
+  @Autowired private CustomerRepository customerrepository;
 	
 	
 	@Override
